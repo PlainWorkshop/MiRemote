@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleExecutable</key>
+	<string>MiRemoteButtons</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>local.codex.MiRemoteButtons</string>
+	<key>CFBundleName</key>
+	<string>小米遥控器按键映射</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>允许控制系统事件以执行遥控器的睡眠操作。</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>连接小米遥控器以接收语音数据。</string>
+	<key>NSInputMonitoringUsageDescription</key>
+	<string>读取小米遥控器的返回键。</string>
+</dict>
+</plist>

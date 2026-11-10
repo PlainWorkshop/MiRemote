@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <rect x="64" y="64" width="896" height="896" rx="215" fill="#162220"/>
+  <rect x="80" y="80" width="864" height="864" rx="201" fill="none" stroke="#38564a" stroke-width="5"/>
+  <g id="remote-body">
+    <rect x="316" y="138" width="392" height="748" rx="140" fill="#0b1513"/>
+    <rect x="328" y="126" width="368" height="748" rx="130" fill="#e1e9e3"/>
+    <rect x="342" y="140" width="340" height="720" rx="118" fill="#eef3ed"/>
+  </g>
+  <g id="controls" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="512" cy="253" r="28" fill="#1e302b" stroke="none"/>
+    <path d="M500 244a20 20 0 1 0 24 0M512 232v19" stroke="#61d99b" stroke-width="7"/>
+    <circle cx="512" cy="456" r="121" fill="#d1ddd3" stroke="#a8bdb0" stroke-width="5"/>
+    <circle cx="512" cy="456" r="60" fill="#f5f8f3" stroke="#a8bdb0" stroke-width="5"/>
+    <path d="M512 365v23M512 524v23M421 456h23M580 456h23" stroke="#6a8374" stroke-width="12"/>
+    <circle cx="414" cy="651" r="30" fill="#d1ddd3" stroke="none"/>
+    <circle cx="512" cy="651" r="30" fill="#213a30" stroke="none"/>
+    <circle cx="610" cy="651" r="30" fill="#d1ddd3" stroke="none"/>
+    <path d="M519 638l-13 13 13 13" stroke="#6ce2a7" stroke-width="9"/>
+    <rect x="486" y="717" width="52" height="93" rx="26" fill="#c4d5c8" stroke="none"/>
+    <path d="M512 735v21M502 745h20M502 786h20" stroke="#678175" stroke-width="6"/>
+  </g>
+</svg>
