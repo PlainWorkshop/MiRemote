@@ -40,7 +40,11 @@ struct Remote3D: NSViewRepresentable {
   stroke([(-0.603,0.255),(-0.603,0.185),(-0.477,0.185),(-0.477,0.255)],symbol)
   stroke([(0.045,0.32),(-0.030,0.25),(0.045,0.18)],symbol,0.021)
   for y:CGFloat in [0.30,0.25,0.20] {stroke([(0.478,y),(0.602,y)],symbol,0.018)}
-  box(0,-0.62,0.39,0.99,0.037,0.19,0.194,bezel);box(0,-0.62,0.35,0.95,0.046,0.17,0.210,buttonMat);stroke([(-0.055,-0.38),(0.055,-0.38)],symbol);stroke([(0,-0.325),(0,-0.435)],symbol);stroke([(-0.055,-0.85),(0.055,-0.85)],symbol);text("NFC",0,-2.65,0.15,bezel)
+  func pill(_ width:CGFloat,_ height:CGFloat,_ depth:CGFloat,_ z:CGFloat,_ mat:SCNMaterial) {
+   let shape=SCNCapsule(capRadius:width/2,height:height);shape.radialSegmentCount=48;shape.materials=[mat]
+   let node=SCNNode(geometry:shape);node.position=SCNVector3(0,-0.62,z);node.scale.z=depth/width;root.addChildNode(node)
+  }
+  pill(0.39,0.99,0.037,0.194,bezel);pill(0.35,0.95,0.046,0.210,buttonMat);stroke([(-0.055,-0.38),(0.055,-0.38)],symbol);stroke([(0,-0.325),(0,-0.435)],symbol);stroke([(-0.055,-0.85),(0.055,-0.85)],symbol);text("NFC",0,-2.65,0.15,bezel)
   let cam=SCNCamera();cam.usesOrthographicProjection=true;cam.orthographicScale=3.65;let camera=SCNNode();camera.camera=cam;camera.position=SCNVector3(0,0,12);root.addChildNode(camera)
   func light(_ type:SCNLight.LightType,_ intensity:CGFloat,_ x:Float,_ y:Float,_ z:Float){let l=SCNLight();l.type=type;l.intensity=intensity;let n=SCNNode();n.light=l;n.position=SCNVector3(x,y,z);root.addChildNode(n)}
   light(.ambient,120,0,0,0);light(.omni,320,-4,6,7);light(.omni,130,5,-2,4)

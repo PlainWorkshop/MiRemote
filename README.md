@@ -20,7 +20,7 @@ scripts/install-app.sh
 scripts/install-driver.sh
 ```
 
-构建输出位于 `build/`。安装应用默认复制到 `/Applications/MiRemoteButtons.app`，目标已存在时不会覆盖；可以向 `install-app.sh` 传入其他完整目标路径。安装驱动需要输入管理员密码，安装到 `/Library/Audio/Plug-Ins/HAL/MiRemote.driver`，同名目标已存在时不会覆盖。**保存工作并重启 Mac**，让系统加载新驱动。
+构建输出位于 `build/`。安装应用默认复制到 `/Applications/MiRemote.app`，目标已存在时不会覆盖；可以向 `install-app.sh` 传入其他完整目标路径。安装驱动需要输入管理员密码，安装到 `/Library/Audio/Plug-Ins/HAL/MiRemote.driver`，同名目标已存在时不会覆盖。**保存工作并重启 Mac**，让系统加载新驱动。
 
 首次打开应用后，按窗口提示授予蓝牙、输入监控、辅助功能和发送按键所需的权限。自动化权限只在使用睡眠动作时需要。权限状态窗口会分别显示 HID 按键连接、BLE 语音连接和音频驱动检测结果。应用窗口打开麦克风开关后，选择 MiRemote 作为微信输入法或其他应用的麦克风。语音键映射可以按需要设置；微信输入法需使用与语音键映射相同的快捷键。
 
@@ -45,7 +45,7 @@ scripts/uninstall-app.sh
 scripts/uninstall-driver.sh
 ```
 
-应用默认从 `/Applications/MiRemoteButtons.app` 移入废纸篓；如果安装到了其他位置，将路径作为参数传给卸载脚本。驱动卸载脚本将其移出 HAL 目录并存放在 `/Library/Audio/Plug-Ins/Disabled/`，以便恢复。重新启动 Mac 后设备从系统列表消失。脚本不会删除项目源码或其他音频驱动。
+应用默认从 `/Applications/MiRemote.app` 移入废纸篓；如果安装到了其他位置，将路径作为参数传给卸载脚本。驱动卸载脚本将其移出 HAL 目录并存放在 `/Library/Audio/Plug-Ins/Disabled/`，以便恢复。重新启动 Mac 后设备从系统列表消失。脚本不会删除项目源码或其他音频驱动。
 
 ## 许可证
 

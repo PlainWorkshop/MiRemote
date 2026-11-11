@@ -1,6 +1,6 @@
 #!/bin/bash
 set -euo pipefail
-src="${1:-/Applications/MiRemoteButtons.app}"
+src="${1:-/Applications/MiRemote.app}"
 [[ -d "$src" ]] || { printf '应用不存在：%s\n' "$src" >&2; exit 1; }
 identifier=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' "$src/Contents/Info.plist")
 [[ "$identifier" == 'local.codex.MiRemoteButtons' ]] || { printf '应用标识不匹配，未移动。\n' >&2; exit 1; }

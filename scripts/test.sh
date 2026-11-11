@@ -3,8 +3,8 @@ set -euo pipefail
 root="$(cd "$(dirname "$0")/.." && pwd)"
 scratch="$(mktemp -d "${TMPDIR:-/tmp}/miremote-test.XXXXXXXX")"
 printf '测试目录：%s\n' "$scratch"
-"$root/scripts/build-app.sh" "$scratch/MiRemoteButtons.app"
-exe="$scratch/MiRemoteButtons.app/Contents/MacOS/MiRemoteButtons"
+"$root/scripts/build-app.sh" "$scratch/MiRemote.app"
+exe="$scratch/MiRemote.app/Contents/MacOS/MiRemoteButtons"
 "$exe" --callout-self-test
 "$exe" --voice-meter-self-test
 "$exe" --modifier-self-test

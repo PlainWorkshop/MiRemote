@@ -9,7 +9,7 @@
 	<key>CFBundleIdentifier</key>
 	<string>local.codex.MiRemoteButtons</string>
 	<key>CFBundleName</key>
-	<string>小米遥控器按键映射</string>
+	<string>MiRemote</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
